@@ -29,7 +29,7 @@ export default function Home() {
 
         {imgs.map((img) => (
           <SwiperSlide key={img.id} className="pt-10">
-            <img src={img.img} alt="img" className='w-screen h-[50%] object-cover'/>
+            <img src={img.img} alt="img"  className='w-screen h-[100%] sm:h-[60%] md:h-[70%] lg:h-[80%] xl:h-[90%] object-cover'/>
           </SwiperSlide>
         ))}
 

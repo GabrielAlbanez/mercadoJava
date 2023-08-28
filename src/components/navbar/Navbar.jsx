@@ -33,15 +33,15 @@ export default function Navbar() {
 
 
     return (
-        <div className='flex w-screen h-[10vh] border-b-[1px] items-center justify-between px-10 '>
+        <div className='flex w-screen h-[10vh] border-b-[1px] items-center justify-between gap-10  px-10 '>
             <div className='w-[15%]'>
                 <img src={logo} alt="" height={75} width={75} />
             </div>
 
-            <div className='flex items-center justify-center w-[100%]'>
-                <div className='flex items-center justify-start border-[1px] h-[5vh] w-[60vh] px-2 rounded-md'>
+            <div className='flex items-center justify-center w-full sm:w-[60vh] md:w-[80vh] lg:w-[60vh]'>
+                <div className='flex items-center justify-start border-[1px] h-[5vh] sm:w-full px-2 rounded-md'>
                     <BsSearch size={20} className="absolute" />
-                    <input type="text" name="" id="" className='w-[60vh] px-10 h-[4vh] bg-transparent border-none outline-none' placeholder='Busque usando vírgula, ex: cerveja, Leite' />
+                    <input type="text" name="" id="" className='w-full sm:w-[60vh] px-10 h-[4vh] bg-transparent border-none outline-none' placeholder='Busque usando vírgula, ex: cerveja, Leite' />
                 </div>
             </div>
 
